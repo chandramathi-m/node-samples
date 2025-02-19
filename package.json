@@ -13,7 +13,8 @@
     "singlemulter": "node single-multer/index.js",
     "multiplemulter": "node multiple-multer/index.js",
     "validatemulter": "node validate-multer/index.js",
-    "filehandling": "node file-system/index.js"
+    "filehandling": "node file-system/index.js",
+    "filepromises": "node file-promises/index.js"
   },
   "author": "",
   "license": "ISC",
