@@ -9,7 +9,11 @@
     "httpstart": "node http-server/index.js",
     "middlewarestart": "node express-middleware/index.js",
     "multersetup": "node multer-setup/index.js",
-    "bodyParsermiddleware": "node bodyParser-middleware/index.js"
+    "bodyParsermiddleware": "node bodyParser-middleware/index.js",
+    "singlemulter": "node single-multer/index.js",
+    "multiplemulter": "node multiple-multer/index.js",
+    "validatemulter": "node validate-multer/index.js",
+    "filehandling": "node file-system/index.js"
   },
   "author": "",
   "license": "ISC",

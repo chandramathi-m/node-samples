@@ -1,8 +1,13 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.send("Welcome my own appp");
+const myMiddleware = (req, res, next) => {
+    console.log('Middleware executed');
+    next();
+};
+
+router.get('/home', myMiddleware, (req, res) => {
+    res.send('Hello from /home');
 });
 
 router.post('/', (req, res) => {
