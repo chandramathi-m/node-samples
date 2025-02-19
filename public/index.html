@@ -23,5 +23,15 @@
             <input type="file" name="file"/>
             <button type="submit">Upload</button>
         </form>
+        <hr/>
+        <h1>Upload and Stream File</h1>
+        <form action="http://localhost:3000/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required/>
+            <button type="submit">Upload File</button>
+        </form>
+        <br/>
+        <a href="http://localhost:3000/download">
+            <button>Download File</button>
+        </a>
     </body>
 </html>
