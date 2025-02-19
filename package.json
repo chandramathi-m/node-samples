@@ -15,7 +15,8 @@
     "validatemulter": "node validate-multer/index.js",
     "filehandling": "node file-system/index.js",
     "filepromises": "node file-promises/index.js",
-    "streaming": "node streaming/index.js"
+    "streaming": "node streaming/index.js",
+    "stream-types": "node stream-types/index.js"
   },
   "author": "",
   "license": "ISC",
