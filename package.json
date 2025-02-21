@@ -16,15 +16,30 @@
     "filehandling": "node file-system/index.js",
     "filepromises": "node file-promises/index.js",
     "streaming": "node streaming/index.js",
-    "stream-types": "node stream-types/index.js"
+    "stream-types": "node stream-types/index.js",
+    "mailing": "node mailing/index.js",
+    "redis": "node redis/index.js",
+    "node-crons-jobs": "node cron-jobs/index.js",
+    "authentication": "node authentication/index.js",
+    "jwt-authentication": "node authentication/jwt-authentication.js",
+    "session-based-auth": "node authentication/session-based-auth.js",
+    "email-based-auth": "node authentication/email-otp.js",
+    "authorization-ex": "node authorization/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.10.0",
+    "redis": "^4.7.0"
   }
 }
