@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Upload File</title>
+    </head>
+    <body>
+        <h1>Single file upload</h1>
+        <form action="http://localhost:3000/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file"/>
+            <button type="submit">Upload</button>
+        </form>
+        <hr/>
+        <h1>Multiple file upload</h1>
+        <form action="http://localhost:3000/upload-multiple" method="post" enctype="multipart/form-data">
+            <input type="file" name="files" multiple/>
+            <button type="submit">Upload</button>
+        </form>
+        <hr/>
+        <h1>Validate file upload</h1>
+        <form action="http://localhost:3000/upload-validated" method="post" enctype="multipart/form-data">
+            <input type="file" name="file"/>
+            <button type="submit">Upload</button>
+        </form>
+        <hr/>
+        <h1>Upload and Stream File</h1>
+        <form action="http://localhost:3000/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" required/>
+            <button type="submit">Upload File</button>
+        </form>
+        <br/>
+        <a href="http://localhost:3000/download">
+            <button>Download File</button>
+        </a>
+    </body>
+</html>
